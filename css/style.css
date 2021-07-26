@@ -1,0 +1,63 @@
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 5px;
+    font-size: 39px;
+    font-weight: bold;
+    right: 5vmin;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 5px;
+    font-size: 39px;
+    font-weight: bold;
+    left: 5vmin;
+}
+
+#board{
+    background: linear-gradient(rgb(173, 240, 173), rgb(211, 211, 85));
+    width: 90vmin;
+    height: 90vmin;
+    /* the min value btw vh and vw is considered as vmin */
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    margin-top: 5vh;
+}
+
+.head{
+    border: 2px solid purple;
+    background: linear-gradient(rgb(255, 158, 158), rgb(255, 255, 169));
+    transform: scale(1.1);
+    border-radius: 9px;
+}
+
+.food{
+    background: linear-gradient(purple, red);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 15px;
+}
+
