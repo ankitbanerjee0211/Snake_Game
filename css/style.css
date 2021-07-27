@@ -14,6 +14,8 @@
     align-items: center;
     /* filter: invert(); */
     flex-direction: column;
+    text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
+
 }
 
 #scoreBox{
@@ -22,6 +24,7 @@
     font-size: 39px;
     font-weight: bold;
     right: 5vmin;
+    text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
 }
 
 #hiscoreBox{
@@ -41,6 +44,7 @@
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
+    box-shadow: 0px 0px 3px 3px #252121;
 }
 #buttons{
     display: none;
@@ -53,49 +57,25 @@
 
 .btn{
     padding: 2px;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: red;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px #252121;
 }
 
 .upDown{
     display: flex;
     flex-direction: column;
-    margin-left: 40vmin;
+    margin-left: 30vmin;
 }
 .upDown .btn{
-    padding: 4px 13px;
+    padding: 4px 20px;
     margin-top: 5px;
 }
 .leftRight .btn{
-    padding: 2px 13px;
-}
-@media only screen and (max-width: 600px){
-    #scoreBox{
-        top: 7vmin;
-        font-size: 1.2rem;
-    }
-    #hiscoreBox{
-        top: 2vmin;
-        font-size: 1.2rem;
-    }
-    #board{
-        margin-bottom: 2vmin;
-    }
-    #buttons{
-        display: flex;
-    }
-
-    .head{
-        border-radius: 5px;
-    }
-    
-    .food{
-        border-radius: 5px;
-    }
-    
-    .snake{
-        border-radius: 9px;
-    }
-    
+    padding: 0px 15px;
+    padding-bottom: 4px;
 }
 
 .head{
@@ -103,6 +83,7 @@
     background: linear-gradient(rgb(255, 158, 158), rgb(255, 255, 169));
     transform: scale(1.1);
     border-radius: 9px;
+    box-shadow: 0px 0px 3px 3px white;
 }
 
 .food{
@@ -116,4 +97,34 @@
     border: .25vmin solid white;
     border-radius: 15px;
 }
+@media only screen and (max-width: 600px){
+    #scoreBox{
+        top: 7vmin;
+        font-size: 1.2rem;
+    }
+    #hiscoreBox{
+        top: 2.4vmin;
+        font-size: 1.2rem;
+    }
+    #board{
+        margin-bottom: 2vmin;
+        width: 95vmin;
+        height: 95vmin;
+    }
+    
+    #buttons{
+        display: flex;
+    }
+
+    .head{
+        border-radius: 3px;
+    }
+    .food{
+        border-radius: 5px;
+    }
+    .snake{
+        border-radius: 7px;
+    } 
+}
+
 
