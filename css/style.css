@@ -98,8 +98,11 @@
     border-radius: 15px;
 }
 @media only screen and (max-width: 600px){
+    .body{
+        min-height: 95vh;
+    }
     #scoreBox{
-        top: 7vmin;
+        top: 8vmin;
         font-size: 1.2rem;
     }
     #hiscoreBox{
