@@ -67,7 +67,7 @@
 .upDown{
     display: flex;
     flex-direction: column;
-    margin-left: 30vmin;
+    margin-left: 22vmin;
 }
 .upDown .btn{
     padding: 4px 20px;
