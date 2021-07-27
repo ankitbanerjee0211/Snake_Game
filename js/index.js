@@ -53,7 +53,7 @@ function gameEngine(){
         gameOverSound.play();
         backgroundMusic.pause();
         inputDir = {x: 0, y:0};
-        alert("Game Over. Press any key to play again!");
+        alert("Game Over. Press Enter to play again!");
         snakeArr = [{x: 13, y:15}];
         backgroundMusic.play();
         score = 0;
@@ -132,6 +132,8 @@ function gameEngine(){
     // to add style
     foodElement.classList.add('food');
     board.appendChild(foodElement);
+
+
 }
 
 
@@ -180,4 +182,34 @@ window.addEventListener('keydown', e=>{
         default:
             break;
     }
+});
+
+// for mobile version
+up.addEventListener('click', ()=>{
+    inputDir = {x: 0, y: 1}; // Starting the game
+    moveSound.play();
+    backgroundMusic.play();
+    inputDir.x = 0;
+    inputDir.y = -1;
+});
+down.addEventListener('click', ()=>{
+    inputDir = {x: 0, y: 1}; // Starting the game
+    moveSound.play();
+    backgroundMusic.play();
+    inputDir.x = 0;
+    inputDir.y = 1;
+});
+left.addEventListener('click', ()=>{
+    inputDir = {x: 0, y: 1}; // Starting the game
+    moveSound.play();
+    backgroundMusic.play();
+    inputDir.x = -1;
+    inputDir.y = 0;
+});
+right.addEventListener('click', ()=>{
+    inputDir = {x: 0, y: 1}; // Starting the game
+    moveSound.play();
+    backgroundMusic.play();
+    inputDir.x = 1;
+    inputDir.y = 0;
 });

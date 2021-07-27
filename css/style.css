@@ -44,19 +44,56 @@
 }
 #buttons{
     display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3vmin;
+}
+
+.btn{
+    padding: 2px;
+    font-size: 2rem;
+}
+
+.upDown{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40vmin;
+}
+.upDown .btn{
+    padding: 4px 13px;
+    margin-top: 5px;
+}
+.leftRight .btn{
+    padding: 2px 13px;
 }
 @media only screen and (max-width: 600px){
     #scoreBox{
-        top: 10vmin;
+        top: 7vmin;
+        font-size: 1.2rem;
     }
     #hiscoreBox{
         top: 2vmin;
+        font-size: 1.2rem;
     }
     #board{
-        margin-bottom: 15vmin;
+        margin-bottom: 2vmin;
     }
     #buttons{
-        display: block;
+        display: flex;
+    }
+
+    .head{
+        border-radius: 5px;
+    }
+    
+    .food{
+        border-radius: 5px;
+    }
+    
+    .snake{
+        border-radius: 9px;
     }
     
 }
