@@ -14,7 +14,7 @@
     align-items: center;
     /* filter: invert(); */
     flex-direction: column;
-    text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
+    text-shadow: 0px 0px 8px white, 0px 0px 8px white, 0px 0px 8px white, 0px 0px 8px white, 0px 0px 8px white;
 
 }
 
@@ -44,7 +44,7 @@
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
-    box-shadow: 0px 0px 3px 2px #252121;
+    box-shadow: 0px 0px 3px 2px #858585;
 }
 #buttons{
     display: none;
@@ -111,6 +111,9 @@
     transform: rotate(360deg);
 }
 @media only screen and (max-width: 600px){
+    .body{
+        background: url("../img/mobile-bg.jpg") no-repeat center center/cover;
+    }
     #scoreBox{
         top: 8vmin;
         font-size: 1.2rem;
