@@ -11,7 +11,7 @@ let snakeArr = [
     {x: 13, y:15}
 ];
 
-food = {x: 6, y: 7};
+let food = {x: 6, y: 7};
 
 // Game Functions
 // Game loop
@@ -63,12 +63,16 @@ function gameEngine(){
     if (snakeArr[0].y === food.y && snakeArr[0].x === food.x){
         // adds on the first index of the array
         foodSound.play();
-        // increasing speed when score is increased by 4
-        if(score%4 == 0 && score != 0){
+        // increasing speed when score is increased by 5
+        if(score == 0){
+            speed = 5;
+        }
+        else if(score%5 == 0){
             speed += 1;
         }
         // incrementing the score
         score += 1;
+        // console.log(speed);
            
         // updateing the highscore value
         if(score>hiscoreval){
@@ -87,9 +91,8 @@ function gameEngine(){
         for (let j = 0; j < snakeArr.length; j++) {
             const element = snakeArr[j];
             if(food === element){
-                food = {x: Math.round(a + (b - a) * Math.random()), y: Math.round(a + (b - a) * Math.random())};
+                food = {x: Math.round(3 + (17 - 3) * Math.random()), y: Math.round(3 + (17 - 3) * Math.random())};
             }
-            
         }
     }
     
@@ -132,8 +135,7 @@ function gameEngine(){
     // to add style
     foodElement.classList.add('food');
     board.appendChild(foodElement);
-
-
+    
 }
 
 
@@ -182,6 +184,7 @@ window.addEventListener('keydown', e=>{
         default:
             break;
     }
+
 });
 
 // for mobile version
