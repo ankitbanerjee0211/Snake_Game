@@ -45,6 +45,7 @@
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
     box-shadow: 0px 0px 3px 2px #858585;
+    opacity: 0.9;
 }
 #buttons{
     display: none;
@@ -133,7 +134,7 @@
     }
 
     .head{
-        border-radius: 3px;
+        border-radius: 5px;
     }
     .food{
         border-radius: 5px;
