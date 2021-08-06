@@ -17,7 +17,7 @@
 }
 
 #scoreBox{
-    position: absolute;
+    position: fixed;
     top: 4.5vmin;
     font-size: 39px;
     font-weight: bold;
@@ -152,9 +152,9 @@
         border-radius: 6px;
     }
     #board{
+        margin-bottom: 2.5vmin;
         width: 90vmin;
         height: 90vmin;
-        margin-top: 3vh;
     }
     
     #buttons{
