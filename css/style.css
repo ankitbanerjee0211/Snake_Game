@@ -96,7 +96,7 @@
     z-index: 10;
     filter: saturate(8);
     transform: scale(1.2);
-    border: 1.75px dotted black;
+    border: 1.5px dotted black;
 }
 
 .food{
@@ -152,9 +152,9 @@
         border-radius: 6px;
     }
     #board{
-        margin-bottom: 2.5vmin;
         width: 90vmin;
         height: 90vmin;
+        margin-top: 3vh;
     }
     
     #buttons{
