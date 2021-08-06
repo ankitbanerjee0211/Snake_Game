@@ -53,10 +53,11 @@ function gameEngine(){
         gameOverSound.play();
         backgroundMusic.pause();
         inputDir = {x: 0, y:0};
-        alert("Game Over. Press Enter to play again!");
+        alert("Game Over\n"+ "      Your Score: " + score+ "\n            Press Enter to play again!");
         snakeArr = [{x: 13, y:15}];
         backgroundMusic.play();
         score = 0;
+        scoreBox.innerHTML = "Score: " + score;
     }
     
     // If the snake eats a food then increment the score and regenerate the food
@@ -81,7 +82,7 @@ function gameEngine(){
             hiscoreBox.innerHTML = "High score: " + hiscoreval;
         }
         scoreBox.innerHTML = "Score: " + score;
-        document.getElementById("scoreBox").style.right = "10vmin";
+        document.getElementById("scoreBox").style.width = "22vmin";
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
         // above code will add a body element to the snake body
         let a = 2;

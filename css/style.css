@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .body{
@@ -14,38 +15,49 @@
     align-items: center;
     /* filter: invert(); */
     flex-direction: column;
-    text-shadow: 0px 0px 8px white, 0px 0px 8px white, 0px 0px 8px white, 0px 0px 8px white, 0px 0px 8px white;
-
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #scoreBox{
     position: absolute;
-    top: 5vmin;
+    top: 4.5vmin;
     font-size: 39px;
     font-weight: bold;
     right: 5vmin;
-    text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
+    background-color: #fdfdaa;
+    padding: 4px 15px;
+    border-radius: 10px;
+    border: 2px solid #e8ad8a;
+    box-shadow: 0px 0px 12px 5px beige;
+    width: 25vw;
+    text-align: center;
 }
 
 #hiscoreBox{
     position: absolute;
-    top: 5vmin;
+    top: 4.5vmin;
     font-size: 39px;
     font-weight: bold;
-    left: 5vmin;
+    left: 10vmin;
+    background-color: #fdfdaa;
+    padding: 4px 15px;
+    border-radius: 10px;
+    border: 2px solid #e8ad8a;
+    box-shadow: 0px 0px 12px 5px beige;
 }
 
 #board{
-    background: linear-gradient(rgb(173, 240, 173), rgb(211, 211, 85));
-    width: 90vmin;
-    height: 90vmin;
+    background: linear-gradient(rgb(173, 240, 173), rgba(255, 255, 255, 0.884), orange);
+    width: 86vmin;
+    height: 86vmin;
     /* the min value btw vh and vw is considered as vmin */
     border: 2px solid black;
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
-    box-shadow: 0px 0px 3px 2px #858585;
-    opacity: 0.9;
+    box-shadow: 0px 0px 8px 4px #858585;
+    opacity: 0.85;
+    margin-top: -3.25vh;
 }
 #buttons{
     display: none;
@@ -53,7 +65,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 3vmin;
+    margin-top: 1.5vmin;
 }
 
 .btn{
@@ -63,6 +75,7 @@
     font-weight: bolder;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 3px #252121;
+    outline: none;
 }
 
 .upDown{
@@ -85,7 +98,7 @@
     z-index: 10;
     filter: saturate(8);
     transform: scale(1.2);
-    border: 1px dotted black;
+    border: 1.75px dotted black;
 }
 
 .food{
@@ -99,34 +112,48 @@
     background: url('../img/snake.jpg') center center/cover;
     z-index: 5;
 }
-.up{
-    transform: rotate(90deg);
+
+/* FOOTER */
+#footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-shadow: none;
+    color: azure;
+    background-color: black;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid white;
 }
-.down{
-    transform: rotate(180deg);
+#footer a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(250, 230, 203);
 }
-.left{
-    transform: rotate(270deg);
-}
-.right{
-    transform: rotate(360deg);
-}
+
+/* Screen size Optimization */
 @media only screen and (max-width: 600px){
     .body{
         background: url("../img/mobile-bg.jpg") no-repeat center center/cover;
     }
     #scoreBox{
-        top: 8vmin;
+        top: 2.4vmin;
         font-size: 1.2rem;
+        width: 38vw;
+        padding: 2px 3.5px;
+        border-radius: 6px;
     }
     #hiscoreBox{
         top: 2.4vmin;
         font-size: 1.2rem;
+        left: 5vmin;
+        padding: 2px 3.5px;
+        border-radius: 6px;
     }
     #board{
         margin-bottom: 2vmin;
-        width: 95vmin;
-        height: 95vmin;
+        width: 91vmin;
+        height: 91vmin;
     }
     
     #buttons{
@@ -134,14 +161,18 @@
     }
 
     .head{
-        border-radius: 5px;
+        border-radius: 6px;
     }
     .food{
         border-radius: 5px;
     }
     .snake{
-        border-radius: 7px;
+        border-radius: 6px;
     } 
+
+    #footer{
+        font-size: 13px;
+    }
 }
 
 
