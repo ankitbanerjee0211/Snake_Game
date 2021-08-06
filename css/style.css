@@ -65,14 +65,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 1.5vmin;
+    margin-top: .5vmin;
 }
 
 .btn{
     padding: 2px;
     font-size: 2.5rem;
     color: red;
-    font-weight: bolder;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 3px #252121;
     outline: none;
@@ -123,12 +122,15 @@
     background-color: black;
     text-align: center;
     padding: 6px;
-    border: 1px solid white;
+    border-top: 1px solid white;
 }
 #footer a{
     text-decoration: none;
     cursor: pointer;
-    color: rgb(250, 230, 203);
+    color: rgb(253, 229, 197);
+}
+#footer a img{
+    height: .8rem;
 }
 
 /* Screen size Optimization */
@@ -151,7 +153,7 @@
         border-radius: 6px;
     }
     #board{
-        margin-bottom: 2vmin;
+        margin-bottom: 2.3vmin;
         width: 91vmin;
         height: 91vmin;
     }
