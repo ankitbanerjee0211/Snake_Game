@@ -63,7 +63,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: .1vmin;
+    margin-top: .05vmin;
 }
 
 .btn{
@@ -122,6 +122,8 @@
     text-align: center;
     padding: 6px;
     border-top: 1px solid white;
+    border-radius: 3vmin 3vmin 0vmin 0vmin;
+    opacity: 0.8;
 }
 #footer a{
     text-decoration: none;
