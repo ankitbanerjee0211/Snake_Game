@@ -5,4 +5,5 @@
 ## Screenshots
 <img src="img/desktop_view.png" alt="desktopView">
 <img src="img/mobileView.png" alt="mobileView">
+<img src="img/playing.png" alt="playing">
 <img src="img/gameover.png" alt="gameover">

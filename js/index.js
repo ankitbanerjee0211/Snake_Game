@@ -57,6 +57,7 @@ function gameEngine(){
         snakeArr = [{x: 13, y:15}];
         backgroundMusic.play();
         score = 0;
+        speed = 5;
         scoreBox.innerHTML = "Score: " + score;
     }
     
