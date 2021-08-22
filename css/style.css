@@ -91,24 +91,26 @@
 }
 
 .head{
-    background-color: rgb(127, 187, 36);
     border-radius: 15px;
     z-index: 10;
-    filter: saturate(8);
-    transform: scale(1.2);
-    border: 1.5px dotted black;
+    filter: grayscale(5%) saturate(200%);
+    transform: scale(1.75);
+    background: url("../img/favicon.png") no-repeat center center/cover;
 }
 
 .food{
     border: 2px solid transparent;
+    transform: scale(.85);
     background: url('../img/food.png') no-repeat center center/cover;
 }
 
 .snake{
-    border: .25vmin dotted black;
     border-radius: 15px;
+    border: .25px solid black;
     background: url('../img/snake.jpg') center center/cover;
     z-index: 5;
+    transform: scale(1.1);
+    border-radius: 50%;
 }
 
 /* FOOTER */
@@ -166,12 +168,6 @@
     .head{
         border-radius: 6px;
     }
-    .food{
-        border-radius: 5px;
-    }
-    .snake{
-        border-radius: 6px;
-    } 
 
     #footer{
         font-size: 13px;

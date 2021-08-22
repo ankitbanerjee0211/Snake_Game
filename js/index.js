@@ -42,6 +42,8 @@ function isCollide(snake){
         return true;
     }
 
+    
+
     return false;
 }
 
@@ -160,27 +162,61 @@ window.addEventListener('keydown', e=>{
     backgroundMusic.play();
     switch (e.key) {
         case "ArrowUp":
-            // console.log("ArrowUp");
             inputDir.x = 0;
             inputDir.y = -1;
+            var link = document.createElement('link'); 
+            // set the attributes for link element
+            link.rel = 'stylesheet'; 
+            link.type = 'text/css';
+            link.href = 'css/up_head.css'; 
+    
+            // Get HTML head element to append 
+            // link element to it 
+            document.getElementsByTagName('HEAD')[0].appendChild(link); 
             break;
 
         case "ArrowDown":
-            // console.log("ArrowDown");
             inputDir.x = 0;
             inputDir.y = 1;
+            var link = document.createElement('link'); 
+            // set the attributes for link element
+            link.rel = 'stylesheet'; 
+            link.type = 'text/css';
+            link.href = 'css/down_head.css'; 
+    
+            // Get HTML head element to append 
+            // link element to it 
+            document.getElementsByTagName('HEAD')[0].appendChild(link); 
             break;
 
         case "ArrowLeft":
-            // console.log("ArrowLeft");
             inputDir.x = -1;
             inputDir.y = 0;
+            
+            // Create new link Element
+            var link = document.createElement('link'); 
+            // set the attributes for link element
+            link.rel = 'stylesheet'; 
+            link.type = 'text/css';
+            link.href = 'css/left_head.css'; 
+    
+            // Get HTML head element to append 
+            // link element to it 
+            document.getElementsByTagName('HEAD')[0].appendChild(link); 
             break;
 
         case "ArrowRight":
-            // console.log("ArrowRight");
             inputDir.x = 1;
             inputDir.y = 0;
+            var link = document.createElement('link'); 
+            // set the attributes for link element
+            link.rel = 'stylesheet'; 
+            link.type = 'text/css';
+            link.href = 'css/right_head.css'; 
+    
+            // Get HTML head element to append 
+            // link element to it 
+            document.getElementsByTagName('HEAD')[0].appendChild(link); 
             break;
 
         default:
@@ -196,6 +232,15 @@ up.addEventListener('click', ()=>{
     backgroundMusic.play();
     inputDir.x = 0;
     inputDir.y = -1;
+    var link = document.createElement('link'); 
+    // set the attributes for link element
+    link.rel = 'stylesheet'; 
+    link.type = 'text/css';
+    link.href = 'css/up_head.css'; 
+
+    // Get HTML head element to append 
+    // link element to it 
+    document.getElementsByTagName('HEAD')[0].appendChild(link); 
 });
 down.addEventListener('click', ()=>{
     inputDir = {x: 0, y: 1}; // Starting the game
@@ -203,6 +248,15 @@ down.addEventListener('click', ()=>{
     backgroundMusic.play();
     inputDir.x = 0;
     inputDir.y = 1;
+    var link = document.createElement('link'); 
+    // set the attributes for link element
+    link.rel = 'stylesheet'; 
+    link.type = 'text/css';
+    link.href = 'css/down_head.css'; 
+
+    // Get HTML head element to append 
+    // link element to it 
+    document.getElementsByTagName('HEAD')[0].appendChild(link); 
 });
 left.addEventListener('click', ()=>{
     inputDir = {x: 0, y: 1}; // Starting the game
@@ -210,6 +264,16 @@ left.addEventListener('click', ()=>{
     backgroundMusic.play();
     inputDir.x = -1;
     inputDir.y = 0;
+    // Create new link Element
+    var link = document.createElement('link'); 
+    // set the attributes for link element
+    link.rel = 'stylesheet'; 
+    link.type = 'text/css';
+    link.href = 'css/left_head.css'; 
+
+    // Get HTML head element to append 
+    // link element to it 
+    document.getElementsByTagName('HEAD')[0].appendChild(link); 
 });
 right.addEventListener('click', ()=>{
     inputDir = {x: 0, y: 1}; // Starting the game
@@ -217,4 +281,13 @@ right.addEventListener('click', ()=>{
     backgroundMusic.play();
     inputDir.x = 1;
     inputDir.y = 0;
+    var link = document.createElement('link'); 
+    // set the attributes for link element
+    link.rel = 'stylesheet'; 
+    link.type = 'text/css';
+    link.href = 'css/right_head.css'; 
+
+    // Get HTML head element to append 
+    // link element to it 
+    document.getElementsByTagName('HEAD')[0].appendChild(link); 
 });
